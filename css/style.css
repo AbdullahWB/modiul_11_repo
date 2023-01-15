@@ -1,0 +1,1214 @@
+/* ================
+root css start
+================ */
+
+:root {
+    --main-color: #FF900E;
+    --secondary-color: rgba(255, 144, 14, 0.1);
+    --main-font-color: #131313;
+    --para-color: #727272;
+    --menu-color: #424242;
+    --box-shadow: 6px -4px 58px 9px rgba(0, 0, 0, 0.31);
+    --main-font: 'Work Sans', sans-serif;
+}
+
+
+/* ================
+root css start
+================ */
+
+
+/* ================
+common css start
+================ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1450px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================
+common css ends
+================ */
+
+
+/* ================
+nav css start
+================ */
+
+nav {
+    background: var(--secondary-color);
+}
+
+nav .navbar {
+    /* max-width: 100%; */
+    height: 53px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navbar .logo-bg {
+    width: 310px;
+    height: 100%;
+}
+
+nav .navbar .logo-bg .logo {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    /* identical to box height */
+    text-align: center;
+    /* Dark 01 */
+    color: var(--main-font-color);
+}
+
+nav .navbar .menu-bg ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    line-height: 53px;
+}
+
+nav .navbar .menu-bg ul li {
+    margin-left: 80px;
+}
+
+nav .navbar .menu-bg ul li a {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /*identicaltoboxheight,or144%*/
+    text-align: center;
+    /*Dark02*/
+    color: var(--menu-color);
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+nav .navbar .menu-bg ul li:hover a {
+    color: var(--main-color);
+}
+
+
+/* ================
+nav css ends
+================ */
+
+
+/* ================
+banner part start
+================ */
+
+.banner-bg {
+    background: var(--secondary-color);
+    padding-top: 102px;
+}
+
+.banner-bg .banner {
+    /* max-width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-bg .banner .banner-hade {
+    text-align: center;
+}
+
+.banner-bg .banner .banner-hade .hade-text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    /* Dark 01 */
+    color: var(--main-font-color);
+}
+
+.banner-bg .banner .banner-hade .para-text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    text-align: center;
+    /* Dark 03 */
+    color: var(--para-color);
+    padding: 32px 295px;
+}
+
+.banner-bg .banner .banner-hade .button {
+    justify-content: center;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.banner-bg .banner .banner-hade .button .btn {
+    width: 180px;
+    height: 64px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    border: 1px solid var(--main-color);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.banner-bg .banner .banner-hade .button .btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.banner-bg .banner .banner-img {
+    width: 1440px;
+    height: 700px;
+    margin-bottom: 45px;
+    /* position: relative; */
+}
+
+
+/* .banner-bg .banner .banner-img .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: hsla(32, 100%, 53%, 0.181);
+    z-index: 999;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+} */
+
+
+/* ================
+banner part ends
+================ */
+
+
+/* ================
+feature section
+================ */
+
+.feature-bg {
+    margin-top: 85px;
+}
+
+.feature-bg .feature {
+    /* background: #d97171; */
+    /* max-width: 100%; */
+    height: 708px;
+    display: grid;
+    grid-template-columns: 704px 537px;
+    justify-content: space-around;
+}
+
+.feature-bg .feature .feature-photo {
+    width: 708px;
+    height: 708px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+}
+
+.feature-bg .feature .feature-photo img {
+    cursor: pointer;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.feature-bg .feature .feature-photo img:hover {
+    transform: scale(1.1);
+}
+
+.feature-bg .feature .feature-text {
+    margin-top: 206px;
+}
+
+.feature-bg .feature .feature-text .hade-text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    /* Dark 01 */
+    color: var(--main-font-color);
+    margin-bottom: 20px;
+}
+
+.feature-bg .feature .feature-text .hade-text .col-h1 {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    /* Dark 03 */
+    color: var(--para-color);
+}
+
+.feature-bg .feature .feature-text .hade-text .col-h2 {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--main-color);
+}
+
+.feature-bg .feature .feature-text .para-text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    /* Dark 03 */
+    color: var(--para-color);
+    margin-bottom: 31px;
+}
+
+.feature-bg .feature .feature-text .button .btn {
+    width: 180px;
+    height: 64px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    border: 1px solid var(--main-color);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.feature-bg .feature .feature-text .button .btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+
+/* ================
+feature section
+================ */
+
+
+/* ================
+love and enjoy
+================ */
+
+.enjoy-bg {
+    margin-top: 130px;
+}
+
+.enjoy-bg .enjoy {
+    /* width: 100%; */
+    height: 1059px;
+    display: grid;
+    grid-template-columns: 586px 800px;
+    justify-content: space-between;
+}
+
+.enjoy-bg .enjoy .enjoy-text {
+    width: 586px;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.enjoy-bg .enjoy .enjoy-text .hade-text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    /* Dark 01 */
+    color: var(--main-font-color);
+    position: relative;
+    margin-left: 26px;
+}
+
+.enjoy-bg .enjoy .enjoy-text .hade-text::before {
+    content: '';
+    left: -26px;
+    top: 0;
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    ;
+}
+
+.enjoy-bg .enjoy .enjoy-text .hade-para {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    /* Dark 03 */
+    color: var(--para-color);
+    margin-top: 24px;
+}
+
+.enjoy-bg .enjoy .enjoy-text ul {
+    margin-top: 30px;
+}
+
+.enjoy-bg .enjoy .enjoy-text ul li {
+    width: 586px;
+    height: 171px;
+    /* box-shadow: var(--box-shadow); */
+    box-shadow: 7px 6px 25px -1px rgba(0, 0, 0, 0.31);
+    -webkit-box-shadow: 7px 6px 25px -1px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 7px 6px 25px -1px rgba(0, 0, 0, 0.31);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.enjoy-bg .enjoy .enjoy-text ul li .li-text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    /* Dark 01 */
+    color: var(--main-font-color);
+    padding: 30px 0 10px 30px;
+}
+
+.enjoy-bg .enjoy .enjoy-text ul li .li-para {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    /* Dark 03 */
+    color: var(--para-color);
+    padding: 0px 0 30px 30px;
+}
+
+.enjoy-bg .enjoy .enjoy-photo {
+    width: 800px;
+    height: 1059px;
+    /* background-size: cover; */
+    position: relative;
+}
+
+.enjoy-bg .enjoy .enjoy-photo img {
+    padding-left: 93px;
+}
+
+.enjoy-bg .enjoy .enjoy-photo .button {
+    width: 342px;
+    height: 200px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+}
+
+.enjoy-bg .enjoy .enjoy-photo .button:hover {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+}
+
+.enjoy-bg .enjoy .enjoy-photo .button .btn {
+    padding: 46px 42px 45px 42px;
+}
+
+.enjoy-bg .enjoy .enjoy-photo .button .btn h5 {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+    /* or 108% */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.enjoy-bg .enjoy .enjoy-photo .button .btn p {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    /* or 160% */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.enjoy-bg .enjoy .enjoy-photo .button:hover .btn h5 {
+    color: var(--main-color);
+}
+
+.enjoy-bg .enjoy .enjoy-photo .button:hover .btn p {
+    color: var(--main-color);
+}
+
+
+/* ================
+love and enjoy
+================ */
+
+
+/* ================
+plane part
+================ */
+
+.plane-bg {
+    margin-top: 130px;
+}
+
+.plane-bg .plane {
+    /* width: 100%; */
+    height: 700px;
+    display: grid;
+    grid-template-columns: 700px 600px;
+    justify-content: space-between;
+}
+
+.plane-bg .plane .plane-img {
+    width: 700px;
+    height: 700px;
+}
+
+.plane-bg .plane .plane-img img {
+    width: 700px;
+    height: 700px;
+}
+
+.plane-bg .plane .plane-text {
+    width: 600px;
+    height: 700px;
+    text-align: justify;
+}
+
+.plane-bg .plane .plane-text h4 {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    /* Dark 01 */
+    color: var(--menu-color);
+    margin-top: 50px;
+}
+
+.plane-bg .plane .plane-text p {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    /* Dark 03 */
+    color: var(--para-color);
+    margin-top: 24px;
+}
+
+.plane-bg .plane .plane-text .button {
+    display: inline-block;
+    /* text-align: center; */
+    margin-top: 40px;
+}
+
+.plane-bg .plane .plane-text .button .btn {
+    width: 180px;
+    height: 64px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    border: 1px solid var(--main-color);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.plane-bg .plane .plane-text .button .btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+
+/* ================
+plane part
+================ */
+
+
+/* ================
+team part
+================ */
+
+.team-bg {
+    margin-top: 130px;
+}
+
+.team-bg .team {
+    /* background: #d97171; */
+    /* max-width: 100%; */
+    height: 708px;
+    display: grid;
+    grid-template-columns: 537px 704px;
+    justify-content: space-around;
+}
+
+.team-bg .team .team-text {
+    margin-top: 206px;
+}
+
+.team-bg .team .team-text .hade-text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    /* Dark 01 */
+    color: var(--main-font-color);
+    margin-bottom: 20px;
+}
+
+.team-bg .team .team-text .hade-text .col-h1 {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    /* Dark 03 */
+    color: var(--para-color);
+}
+
+.team-bg .team .team-text .hade-text .col-h2 {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--main-color);
+}
+
+.team-bg .team .team-text .para-text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    /* Dark 03 */
+    color: var(--para-color);
+    margin-bottom: 31px;
+}
+
+.team-bg .team .team-text .button .btn {
+    width: 180px;
+    height: 64px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    border: 1px solid var(--main-color);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.team-bg .team .team-text .button .btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.team-bg .team .team-photo {
+    width: 708px;
+    height: 708px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+}
+
+.team-bg .team .team-photo img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    cursor: pointer;
+}
+
+.team-bg .team .team-photo img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+/* ================
+team part
+================ */
+
+
+/* ================
+FACT part
+================ */
+
+.fact-bg {
+    margin-top: 127px;
+}
+
+.fact-bg .fact {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 129px 241px; */
+    justify-content: space-between;
+}
+
+.fact-bg .fact .fact-text {
+    width: 100%;
+    height: 130PX;
+}
+
+.fact-bg .fact .fact-text .fact-hade {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    /* identical to box height */
+    /* Dark 01 */
+    color: var(--main-font-color);
+    padding-bottom: 26px;
+}
+
+.fact-bg .fact .fact-text .fact-para {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    /* Dark 03 */
+    color: var(--para-color);
+    padding-right: 890px;
+}
+
+.fact-bg .fact .fact-img ul {
+    display: grid;
+    grid-template-columns: 241px 241px 241px 241px;
+    justify-content: space-between;
+}
+
+.fact-bg .fact .fact-img ul li {
+    width: 241px;
+    height: 241px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid var(--main-color);
+    /*box-shadow: var(--box-shadow);
+    */
+    cursor: pointer;
+    margin-top: 100px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.fact-bg .fact .fact-img ul li:hover {
+    transform: scale(1.1);
+    background: var(--main-color);
+}
+
+.fact-bg .fact .fact-img ul li:hover h4 {
+    color: #FFFFFF;
+}
+
+.fact-bg .fact .fact-img ul li:hover p {
+    color: #FFFFFF;
+}
+
+.fact-bg .fact .fact-img ul li img {
+    width: 45px;
+    height: 45px;
+    margin-top: 45px;
+    margin-left: 97px;
+}
+
+.fact-bg .fact .fact-img ul li h4 {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    /* identical to box height */
+    /* Dark 02 */
+    color: var(--menu-color);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.fact-bg .fact .fact-img ul li p {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    /* Dark 03 */
+    color: var(--para-color);
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* ================
+FACT part
+================ */
+
+
+/* ================
+sponsors part
+================ */
+
+.sponsors-bg {
+    margin-top: 180px;
+}
+
+
+/* .sponsors-bg .sponsors {} */
+
+.sponsors-bg .sponsors .sponsors-text {
+    text-align: center;
+}
+
+.sponsors-bg .sponsors .sponsors-text h4 {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    /* identical to box height */
+    /* Dark 01 */
+    color: var(--main-font-color);
+    margin-bottom: 24px;
+}
+
+.sponsors-bg .sponsors .sponsors-text p {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    text-align: center;
+    /* Dark 03 */
+    color: var(--para-color);
+    margin-bottom: 50px;
+    padding: 0 454px;
+}
+
+.sponsors-bg .sponsors .sponsors-img ul {
+    display: grid;
+    grid-template-columns: 167px 166px 154px 153px 182px;
+    justify-content: space-around;
+}
+
+.sponsors-bg .sponsors .sponsors-img ul li img {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    cursor: pointer;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.sponsors-bg .sponsors .sponsors-img ul li img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    filter: none;
+    -webkit-filter: none;
+}
+
+
+/* ================
+sponsors part
+================ */
+
+
+/* ================
+footer-part
+================ */
+
+.footer-bg {
+    margin-top: 170px;
+    height: 100px;
+}
+
+.footer-bg .footer {
+    background: var(--secondary-color);
+}
+
+.footer-bg .footer .footer-text {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-bg .footer .footer-text h4 {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100px;
+    text-align: center;
+    /* Dark 02 */
+    color: var(--para-color);
+}
+
+
+/* ================
+footer-part
+================ */
+
+
+/* =================================================
+write hear all css media Queries part starts
+================================================= */
+
+
+/* ============== for mobile devices============== */
+
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+        /* max-width: 100%; */
+    }
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .navbar .menu-bg ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        /* width: 100% !important; */
+    }
+    .navbar .menu-bg ul li {
+        margin-left: 0 !important;
+    }
+    .banner-bg {
+        width: 100%;
+        padding-top: 296px;
+    }
+    .banner-bg .banner .banner-hade .para-text {
+        padding: 20px 20px;
+    }
+    .banner-bg .banner .banner-img {
+        width: 100%;
+        height: 100%;
+    }
+    .banner-bg .banner .banner-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .feature-bg {
+        width: 100%;
+        height: 100%;
+    }
+    .feature-bg .feature {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+    .feature-bg .feature .feature-photo {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+    .feature-bg .feature .feature-photo img {
+        width: 100%;
+        height: 100%;
+    }
+    .feature-bg .feature .feature-text {
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .feature-bg .feature .feature-text .button .btn {
+        display: inline-block;
+    }
+    .enjoy-bg .enjoy {
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        text-align: center;
+    }
+    .enjoy-bg .enjoy .enjoy-text {
+        width: 100%;
+        height: 100%;
+    }
+    .enjoy-bg .enjoy .enjoy-text ul {
+        width: 100%;
+    }
+    .enjoy-bg .enjoy .enjoy-text ul li {
+        width: 100%;
+        height: 100%;
+    }
+    .enjoy-bg .enjoy .enjoy-photo {
+        width: 100%;
+        height: 100%;
+    }
+    .enjoy-bg .enjoy .enjoy-photo img {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    .enjoy-bg .enjoy .enjoy-photo .button {
+        display: none;
+    }
+    .plane-bg .plane {
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .plane-bg .plane .plane-img {
+        width: 100%;
+        height: 100%;
+    }
+    .plane-bg .plane .plane-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .plane-bg .plane .plane-text {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    .team-bg {
+        width: 100%;
+        height: 100%;
+    }
+    .team-bg .team {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+    .team-bg .team .team-text {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+    .team-bg .team .team-text .button .btn {
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+    .team-bg .team .team-photo {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+    .team-bg .team .team-photo img {
+        width: 100%;
+        height: 100%;
+    }
+    .fact-bg .fact {
+        width: 100%;
+        height: 100%;
+    }
+    .fact-bg .fact .fact-text {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .fact-bg .fact .fact-text .fact-hade {
+        padding: 0;
+    }
+    .fact-bg .fact .fact-text .fact-para {
+        padding: 0;
+    }
+    .fact-bg .fact .fact-img ul {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+    .sponsors-bg .sponsors {
+        width: 100%;
+        height: 100%;
+    }
+    .sponsors-bg .sponsors .sponsors-text {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .sponsors-bg .sponsors .sponsors-text .sponsors-hade {
+        padding: 0;
+    }
+    .sponsors-bg .sponsors .sponsors-text .sponsors-para {
+        padding: 0;
+    }
+    .sponsors-bg .sponsors .sponsors-img ul {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+    }
+    .sponsors-bg .sponsors .sponsors-img ul li {
+        margin-bottom: 20px;
+    }
+    .footer-bg {
+        margin-top: 80px;
+    }
+    .footer-bg .footer {
+        width: 100%;
+        height: 100%;
+    }
+    .footer-bg .footer .footer-text h4 {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 20px;
+        padding-top: 30px;
+    }
+}
+
+
+/* ============== for mobile devices============== */
+
+
+/* =================================================
+write hear all css media Queries part ends
+================================================= */
